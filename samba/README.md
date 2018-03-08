@@ -107,5 +107,8 @@ sudo systemctl status winbind.service
 Use Bonjour Browser [](http://www.tildesoft.com/) on macOS to make sure the samba service is visible.
 Connect the samba share from Finder and create test directory to make sure user/password have setup correctly.
 
++ Tips:
++ Use [mdns-repeater](https://github.com/wheelcomplex/mdns-repeater) to relay broadcast when the samba server and macOS in difference subnet.
+
 reference:
 * [Robert LaRocca: Build Samba 4.6.x with Time Machine support on Ubuntu 16.04](https://laroccx.wordpress.com/2017/06/14/build-samba-4-6-x-with-time-machine-support-on-ubuntu-16-04/)
