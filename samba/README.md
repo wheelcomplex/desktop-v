@@ -50,6 +50,8 @@ make -j$(grep -c ^processor /proc/cpuinfo) && sudo make -j$(grep -c ^processor /
 ```
 
 + Prepare the configuration files and CUPS print server SMB spooler support:
+Note: make sure the directorys (defined in smb.conf) for very sharing user have been created and have correct permisions.
+Otherwise Time machine will return error message: OSStatus -1073741275.
 
 ```
 sudo touch /etc/samba/lmhosts
@@ -103,7 +105,7 @@ sudo systemctl status winbind.service
 + Debug hints:
 
 Use Bonjour Browser [](http://www.tildesoft.com/) on macOS to make sure the samba service is visible.
-Connect the samba share from Finder to make sure user/password have setup correctly.
+Connect the samba share from Finder and create test directory to make sure user/password have setup correctly.
 
 reference:
 * [Robert LaRocca: Build Samba 4.6.x with Time Machine support on Ubuntu 16.04](https://laroccx.wordpress.com/2017/06/14/build-samba-4-6-x-with-time-machine-support-on-ubuntu-16-04/)
