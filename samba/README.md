@@ -63,6 +63,12 @@ sudo wget -q https://raw.githubusercontent.com/wheelcomplex/desktop-v/master/sam
 sudo ln -v -sf /usr/bin/smbspool /usr/lib/cups/backend/smb
 ```
 
++ Create samba user:
+
+```
+sudo smbpasswd -a <system username>
+```
+
 + On boot systemd services:
 
 ```
