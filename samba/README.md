@@ -14,7 +14,7 @@ sudo apt-get update && sudo apt-get install build-essential acl attr \
   libldap2-dev libncurses5-dev libpam0g-dev libparse-yapp-perl \
   libpopt-dev libreadline-dev perl perl-modules pkg-config \
   python-all-dev python-dev cups python-dnspython python-crypto \
-  xsltproc zlib1g-dev libsystemd-dev libgpgme11-dev python-gpgme \
+  xsltproc zlib1g-dev libsystemd-dev libgpgme11-dev \
   python-m2crypto libtracker-sparql-2.0-0 libtracker-sparql-2.0-dev
 ```
 
