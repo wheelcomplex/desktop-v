@@ -76,6 +76,10 @@ sudo smbpasswd -a <system username>
 ```
 sudo cp -v bin/default/packaging/systemd/*.service /lib/systemd/system/
 
+sudo systemctl stop nmb.service
+sudo systemctl stop smb.service
+sudo systemctl stop winbind.service
+
 sudo systemctl start nmb.service
 sudo systemctl enable nmb.service
 sudo systemctl start smb.service
