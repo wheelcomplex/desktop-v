@@ -22,7 +22,7 @@ sudo apt-get update && sudo apt-get install build-essential acl attr \
 
 ```
 mkdir -p ~/tmp/ && cd ~/tmp && git clone https://github.com/samba-team/samba.git && \
-  cd samba && wget -q https://github.com/samba-team/samba/pull/143.patch && \
+  cd samba && git checkout -b v4-8-stable remotes/origin/v4-8-stable && wget -q https://github.com/samba-team/samba/pull/143.patch && \
   patch -p1 < 143.patch
 ```
   
