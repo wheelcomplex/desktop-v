@@ -15,7 +15,7 @@ sudo apt-get update && sudo apt-get install build-essential acl attr \
   libpopt-dev libreadline-dev perl perl-modules pkg-config \
   python-all-dev python-dev cups python-dnspython python-crypto \
   xsltproc zlib1g-dev libsystemd-dev libgpgme11-dev \
-  python-m2crypto libtracker-sparql-2.0-0 libtracker-sparql-2.0-dev
+  python-m2crypto libtracker-sparql-2.0-0 libtracker-sparql-2.0-dev liblmdb-dev
 ```
 
 + Download Samba sources from github and apply patch for building with libtracker-sparql-2.0:
