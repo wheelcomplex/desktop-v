@@ -80,12 +80,13 @@ sudo systemctl stop nmb.service
 sudo systemctl stop smb.service
 sudo systemctl stop winbind.service
 
-sudo systemctl start nmb.service
-sudo systemctl enable nmb.service
-sudo systemctl start smb.service
 sudo systemctl enable smb.service
-sudo systemctl start winbind.service
+sudo systemctl enable nmb.service
 sudo systemctl enable winbind.service
+
+sudo systemctl start nmb.service
+sudo systemctl start smb.service
+sudo systemctl start winbind.service
 ```
 
 + Broadcast samba services to macOS:
